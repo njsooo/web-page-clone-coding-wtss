@@ -1,0 +1,74 @@
+.section-right {
+  width: $section-right-width;
+  .article-7 {
+    .effect {
+      @include effect-flip;
+    }
+  }
+  .article-8 {
+    .effect {
+      @include effect-flip;
+      .front figcaption,
+      .back figcaption {
+        @include absolte-center {
+          transform: translate(-50%, -50%) translateZ(100px);
+        }
+        width: 60%;
+        padding: 3px 10px;
+        background: rgb(0 0 0 / 40%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.125rem;
+        font-family: "Abel", sans-serif;
+        text-align: center;
+      }
+    }
+  }
+  .article-9 {
+    border-bottom: 0;
+    .effect {
+      position: relative;
+      overflow: hidden;
+      background: #000;
+      &:hover {
+        figure {
+          img {
+            opacity: 0.4;
+          }
+          figcaption {
+            opacity: 1;
+            transform: translate(-50%, -50%) rotate(0deg);
+          }
+        }
+      }
+      figure {
+        img {
+          transition: opacity 0.3s ease;
+        }
+        figcaption {
+          @include absolte-center;
+          color: #fff;
+          font-size: 1rem;
+          opacity: 0;
+          transition:
+            opacity 0.3s ease,
+            transform 0.3s ease;
+          transform: translate(350%, -50%) rotate(180deg);
+          &::after {
+            @include absolte-center;
+            content: "";
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #000;
+            z-index: -1;
+          }
+          em {
+            display: block;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

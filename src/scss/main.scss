@@ -1,0 +1,22 @@
+@use "sass:color";
+@use "sass:list";
+
+@import "./variables";
+@import "./mixins";
+@import "./breakpoints";
+@import "./reset";
+@import "./commons";
+
+@import "./header";
+@import "./nav";
+@import "./banner";
+@import "./content";
+@import "./content_left";
+@import "./content_center";
+@import "./content_right";
+@import "./footer";
+
+.box {
+  width: 100px;
+  height: 100px;
+}

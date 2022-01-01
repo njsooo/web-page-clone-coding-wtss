@@ -1,0 +1,174 @@
+@for $i from 1 through 9 {
+  .article-#{$i} {
+    @include article-template;
+  }
+}
+
+main {
+  .container {
+    display: flex;
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+  }
+}
+
+@include media-xxl {
+  main {
+    .container {
+      border: 0;
+      .section-center {
+        .article-5 {
+          .lightgallery {
+            a {
+              width: 24%;
+              &:nth-child(5n) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-xl {
+  main {
+    .container {
+      .section-center {
+        .article-5 {
+          .lightgallery {
+            a {
+              width: 32.33%;
+              &:nth-child(5) {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-lg {
+  main {
+    .container {
+      flex-wrap: wrap;
+      .section-center {
+        width: calc(100% - $section-left-width);
+        border-right: 0;
+      }
+      .section-right {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid $border-color;
+        article {
+          overflow: hidden;
+          box-sizing: border-box;
+          width: 33.3333%;
+          border-right: 1px solid $border-color;
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  main {
+    .container {
+      .section-left {
+        width: 100%;
+      }
+      .section-center {
+        width: 100%;
+        border: 0;
+      }
+    }
+  }
+}
+
+@include media-sm {
+  main {
+    .container {
+      .section-left {
+        .article-1 {
+          padding: 0;
+          border-bottom: 0;
+          h4,
+          p {
+            display: none;
+          }
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              box-sizing: border-box;
+              width: 33.3333%;
+              border-right: 1px solid $border-color;
+              a {
+                color: #fff;
+                text-align: center;
+                &:hover {
+                  background-color: color.adjust($article-1-color, $alpha: -0.7);
+                  box-shadow: none;
+                }
+                i {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .section-center {
+        .article-5 {
+          .lightgallery {
+            a {
+              width: 49%;
+              &:last-child {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .section-right {
+        article {
+          width: 50%;
+          &:nth-of-type(2) {
+            border: 0;
+          }
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-xs {
+  main {
+    .container {
+      .section-center {
+        .article-5 {
+          .lightgallery {
+            a {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .section-right {
+        flex-wrap: wrap;
+        article {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@mixin hover-inset-box-shadow($spread: 3px, $color: #4a99bd) {
+  box-shadow:
+    inset 0 0 0 $spread $color,
+    inset 0 0 0 100px rgb(0 0 0 / 10%);
+}
+
+@mixin truncate-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin line-clamp($line) {
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 70px; /* IE */
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+@mixin list-bullet {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #25a2d0;
+  @content;
+}
+
+@mixin absolte-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @content;
+}
+
+@mixin article-template {
+  padding: 1rem;
+  border-bottom: 1px solid $border-color;
+  h4 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    color: $article-header-color;
+    font-size: 1.25rem;
+  }
+  .desc {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed $border-color;
+    color: #878787;
+    line-height: 1.5;
+  }
+}
+
+@mixin article-notice {
+  position: relative;
+  h5 {
+    margin-bottom: 5px;
+    color: $article-header-color;
+    font-size: 0.875rem;
+  }
+  .more {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    color: #878787;
+    font-size: 10px;
+    i {
+      margin-left: 4px;
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      padding-left: 8px;
+      &::before {
+        @include list-bullet {
+          top: 8px;
+          background-color: #449ce2;
+        }
+      }
+    }
+  }
+}
+
+@mixin effect-flip {
+  position: relative;
+  perspective: 600px;
+  &:hover {
+    .front {
+      transform: rotateY(180deg);
+    }
+    .back {
+      transform: rotateY(0deg);
+      z-index: 1;
+    }
+  }
+  .front {
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4038dc;
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: -1;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 3rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

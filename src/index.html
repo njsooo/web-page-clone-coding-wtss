@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Web Page</title>
+  <!-- Google Font - Nanum Gothic, Abel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Nanum+Gothic&display=swap" />
+  <!-- ICON - Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <div id="skip">
+    <a href="#nav">대메뉴 바로가기</a>
+    <a href="#main">본문 바로가기</a>
+  </div>
+  <header>
+    <div class="container">
+      <h2 class="blind">링크 모음 1</h2>
+      <ul class="links-1">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Webstandard</a></li>
+      </ul>
+      <div class="title">
+        <h1><a href="#">RESPONSIVE WEB PAGE</a></h1>
+        <h2><a href="#">EXAMPLE.COM</a></h2>
+      </div>
+      <h2 class="blind">링크 모음 2</h2>
+      <ul class="links-2">
+        <li>
+          <a href="#">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- // HEADER -->
+  <nav id="nav">
+    <h2 class="blind">대메뉴</h2>
+    <div class="container">
+      <div class="column">
+        <h3>HTML Reference</h3>
+        <ul>
+          <li><a href="#">HTML 태그(Tag)</a></li>
+          <li><a href="#">블록 요소/인라인 요소</a></li>
+          <li><a href="#">DTD 선언</a></li>
+          <li><a href="#">언어 속성 설정</a></li>
+          <li><a href="#">HTML &lt;title&gt;</a></li>
+          <li><a href="#">HTML &lt;meta&gt;</a></li>
+          <li><a href="#">특수문자</a></li>
+          <li><a href="#">하이퍼 링크</a></li>
+          <li><a href="#">HTML &lt;style&gt;</a></li>
+          <li><a href="#">HTML &lt;html&gt;</a></li>
+          <li><a href="#">HTML &lt;head&gt;</a></li>
+          <li><a href="#">HTML &lt;div&gt;</a></li>
+          <li><a href="#">HTML &lt;colgroup&gt;</a></li>
+          <li><a href="#">HTML &lt;caption&gt;</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>CSS Reference</h3>
+        <ul>
+          <li><a href="#">CSS 선택자</a></li>
+          <li><a href="#">CSS 단위</a></li>
+          <li><a href="#">CSS 색상</a></li>
+          <li><a href="#">CSS 선언 방법</a></li>
+          <li><a href="#">상대주소와 절대주소</a></li>
+          <li><a href="#">CSS float</a></li>
+          <li><a href="#">이미지 표현 방법</a></li>
+          <li><a href="#">이미지 스프라이트</a></li>
+          <li><a href="#">IR 효과</a></li>
+          <li><a href="#">이미지 최적화</a></li>
+          <li><a href="#">background-color</a></li>
+          <li><a href="#">border-style</a></li>
+          <li><a href="#">font-size</a></li>
+          <li><a href="#">text-align</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Responsive</h3>
+        <ul>
+          <li><a href="#">반응형사이트</a></li>
+          <li><a href="#">미디어쿼리</a></li>
+          <li><a href="#">CSS3</a></li>
+          <li><a href="#">웹 접근성 연구소</a></li>
+          <li><a href="#">네이버 널리</a></li>
+          <li><a href="#">다음 다룸</a></li>
+          <li><a href="#">Webstandard</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- // NAV -->
+  <div class="banner">
+    <h2 class="blind">배너</h2>
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <button class="btn-toggle-nav">
+        <i class="fas fa-chevron-down"></i>
+        <span class="blind">대메뉴 펼치기</span>
+      </button>
+    </div>
+  </div>
+  <!-- // BANNER -->
+  <main id="main">
+    <h2 class="blind">본문</h2>
+    <div class="container">
+      <section class="section-left">
+        <h3 class="blind">본문 왼쪽 컨텐츠</h3>
+        <article class="article-1">
+          <h4>Menu</h4>
+          <p class="desc">Box-shadow를 이용한 마우스 오버 효과 메뉴입니다.</p>
+          <ul>
+            <li><a href="#">CAFE<i class="fas fa-angle-double-right"></i></a></li>
+            <li><a href="#">TUTORIAL<i class="fas fa-angle-double-right"></i></a></li>
+            <li><a href="#">WEBSITE<i class="fas fa-angle-double-right"></i></a></li>
+            <li><a href="#">REFERENCE<i class="fas fa-angle-double-right"></i></a></li>
+            <li><a href="#">CSS3<i class="fas fa-angle-double-right"></i></a></li>
+            <li><a href="#">HTML5<i class="fas fa-angle-double-right"></i></a></li>
+          </ul>
+        </article>
+        <!-- // ARTICLE 1 -->
+        <article class="article-2">
+          <h4>Notice</h4>
+          <p class="desc">게시판 영역의 한줄 효과와 두줄 효과 게시판입니다.</p>
+          <div class="notice-1">
+            <h5>Notice 1</h5>
+            <a href="#" class="more">MORE<i class="fas fa-plus-circle"></i></a>
+            <ul>
+              <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄
+                  효과입니다.</a></li>
+              <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄
+                  효과입니다.</a></li>
+              <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄
+                  효과입니다.</a></li>
+              <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄
+                  효과입니다.</a></li>
+            </ul>
+          </div>
+          <div class="notice-2">
+            <h5>Notice 2</h5>
+            <a href="#" class="more">MORE<i class="fas fa-plus-circle"></i></a>
+            <ul>
+              <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.
+                  이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+              <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.
+                  이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+              <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.
+                  이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+              <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.
+                  이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+            </ul>
+          </div>
+        </article>
+        <!-- // ARTICLE 2 -->
+        <article class="article-3">
+          <h4>Blog</h4>
+          <p class="desc">해상도에 따라 이미지를 다르게 표현하는 방법입니다.</p>
+          <a href="#">
+            <figure>
+              <img src="./images/blog_1_1x.jpg"
+                srcset="./images/blog_1_1x.jpg 1x, ./images/blog_1_2x.jpg 2x, ./images/blog_1_3x.jpg 3x">
+              <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지
+                글입니다. 반응형 웹 사이트 이미지 글입니다.</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img src="./images/blog_2_1x.jpg"
+                srcset="./images/blog_2_1x.jpg 1x, ./images/blog_2_2x.jpg 2x, ./images/blog_2_3x.jpg 3x">
+              <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지
+                글입니다. 반응형 웹 사이트 이미지 글입니다.</figcaption>
+            </figure>
+          </a>
+        </article>
+        <!-- // ARTICLE 3 -->
+      </section>
+      <!-- // SECTION LEFt -->
+      <section class="section-center">
+        <h3 class="blind">본문 중앙 컨텐츠</h3>
+        <article class="article-4">
+          <h4>Swiper Slider</h4>
+          <div class="desc">swiper를 이용한 이미지 슬라이드 효과입니다.</div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure>
+                  <img src="./images/slide.jpg" alt="">
+                  <figcaption>
+                    <em>RESPONSIVE SITE</em>
+                    <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="./images/slide.jpg" alt="">
+                  <figcaption>
+                    <em>RESPONSIVE SITE</em>
+                    <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="./images/slide.jpg" alt="">
+                  <figcaption>
+                    <em>RESPONSIVE SITE</em>
+                    <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+            <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div>
+          </div>
+          <!-- // Swiper -->
+        </article>
+        <!-- // ARTICLE 4 -->
+        <article class="article-5">
+          <h4>Filter Effect</h4>
+          <div class="desc">CSS3에서는 Background-blend-mode, mix-blend-mode, filter와 같이 포토샵에 다루는 효과들이 있습니다.</div>
+          <div class="lightgallery">
+            <a href="./images/filter_effect_1.jpg">
+              <img src="./images/filter_effect_thumb_1.jpg" alt="">
+              <span>blur</span>
+            </a>
+            <a href="./images/filter_effect_2.jpg">
+              <img src="./images/filter_effect_thumb_2.jpg" alt="">
+              <span>brightness</span>
+            </a>
+            <a href="./images/filter_effect_3.jpg">
+              <img src="./images/filter_effect_thumb_3.jpg" alt="">
+              <span>contrast</span>
+            </a>
+            <a href="./images/filter_effect_4.jpg">
+              <img src="./images/filter_effect_thumb_4.jpg" alt="">
+              <span>grayscale</span>
+            </a>
+            <a href="./images/filter_effect_5.jpg">
+              <img src="./images/filter_effect_thumb_5.jpg" alt="">
+              <span>hur-rotate</span>
+            </a>
+            <a href="./images/filter_effect_6.jpg">
+              <img src="./images/filter_effect_thumb_6.jpg" alt="">
+              <span>invert</span>
+            </a>
+            <a href="./images/filter_effect_7.jpg">
+              <img src="./images/filter_effect_thumb_7.jpg" alt="">
+              <span>opacity</span>
+            </a>
+            <a href="./images/filter_effect_8.jpg">
+              <img src="./images/filter_effect_thumb_8.jpg" alt="">
+              <span>saturate</span>
+            </a>
+            <a href="./images/filter_effect_9.jpg">
+              <img src="./images/filter_effect_thumb_9.jpg" alt="">
+              <span>sepia</span>
+            </a>
+            <a href="./images/filter_effect_10.jpg">
+              <img src="./images/filter_effect_thumb_10.jpg" alt="">
+              <span>mix</span>
+            </a>
+          </div>
+        </article>
+        <!-- // ARTICLE 5 -->
+        <article class="article-6">
+          <h4>Video</h4>
+          <div class="desc">영상을 보여주는 영역입니다.</div>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/tHy498wdPaA" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+        <!-- // ARTICLE 6 -->
+      </section>
+      <!-- // SECTION CENTER -->
+      <section class="section-right">
+        <h3 class="blind">본문 오른쪽 컨텐츠</h3>
+        <article class="article-7">
+          <h4>Effect 1</h4>
+          <p class="desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+          <div class="effect">
+            <figure class="front">
+              <img src="./images/effect_1.jpg" alt="">
+            </figure>
+            <div class="back">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+        </article>
+        <!-- // ARTICLE 7 -->
+        <article class="article-8">
+          <h4>Effect 2</h4>
+          <p class="desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+          <div class="effect">
+            <figure class="front">
+              <img src="./images/effect_2_front.jpg" alt="">
+              <figcaption>Hover Effect</figcaption>
+            </figure>
+            <figure class="back">
+              <img src="./images/effect_2_back.jpg" alt="">
+              <figcaption>Hover Effect</figcaption>
+            </figure>
+          </div>
+        </article>
+        <!-- // ARTICLE 8 -->
+        <article class="article-9">
+          <h4>Effect 3</h4>
+          <p class="desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+          <div class="effect">
+            <figure>
+              <img src="./images/effect_3.jpg" alt="">
+              <figcaption>Hover<em>Effect</em></figcaption>
+            </figure>
+          </div>
+        </article>
+        <!-- // ARTICLE 9 -->
+      </section>
+      <!-- // SECTION RIGHT -->
+    </div>
+  </main>
+  <!-- // MAIN -->
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">사이트 도움말</a></li>
+        <li><a href="#">사이트 이용약관</a></li>
+        <li><a href="#">사이트 운영원칙</a></li>
+        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+        <li><a href="#">책임의 한계와 법적고지</a></li>
+        <li><a href="#">게시중단요청서비스</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <div class="copy">Copyright &copy; <a href="#">webstoryboy</a> All Rights Reserved.</div>
+    </div>
+  </footer>
+  <!-- // FOOTER -->
+</body>
+</html>

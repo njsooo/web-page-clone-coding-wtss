@@ -1,0 +1,68 @@
+.section-left {
+  width: $section-left-width;
+  .article-1 {
+    ul li a {
+      position: relative;
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid $border-color;
+      color: #878787;
+      font-size: 1rem;
+      transition:
+        background-color 0.34s ease,
+        color 0.34s ease;
+      &:hover {
+        background-color: color.adjust($article-1-color, $alpha: -0.1);
+        &::before {
+          width: 80%;
+        }
+        color: #fff;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: color.adjust($article-1-color, $alpha: -0.3);
+        transition: width 0.34s ease;
+        z-index: -1;
+      }
+      i {
+        position: absolute;
+        top: 17px;
+        right: 10px;
+        bottom: 0;
+        margin: auto 0;
+        font-size: 0.875rem;
+      }
+    }
+  }
+  .article-2 {
+    background-color: #fff;
+    .notice-1 {
+      @include article-notice;
+      ul li {
+        @include truncate-text;
+      }
+    }
+    .notice-2 {
+      @include article-notice;
+      margin-top: 1rem;
+      ul li {
+        @include line-clamp(2);
+      }
+    }
+  }
+  .article-3 {
+    border-bottom: 0;
+    figure:last-child {
+      margin-top: 1rem;
+    }
+    figcaption {
+      @include line-clamp(3);
+      margin-top: 0.5rem;
+    }
+  }
+}
